@@ -36,12 +36,10 @@ template <typename T>
 complex<T>::complex(const T r, const T i) : real(r), imag(i) {} // створюється об'єкт та в нього заносяться значення r та i типу T
 
 template <typename T>
-complex<T>::complex(const complex& other)
-    : real(other.real), imag(other.imag) {} // створюється об'єкт та в нього заносяться значення іншого об'єкта
+complex<T>::complex(const complex& other) : real(other.real), imag(other.imag) {} // створюється об'єкт та в нього заносяться значення іншого об'єкта
 
 template <typename T>
-complex<T>::complex(complex&& other)
-    : real(other.real), imag(other.imag){  // переміщуємо значення
+complex<T>::complex(complex&& other) : real(other.real), imag(other.imag){  // переміщуємо значення
     // Обнуляємо джерело
     other.real = 0;
     other.imag = 0;
