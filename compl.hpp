@@ -41,8 +41,7 @@ complex<T>::complex(const complex& other)
 
 template <typename T>
 complex<T>::complex(complex&& other)
-    : real(other.real), imag(other.imag) // переміщуємо значення
-{
+    : real(other.real), imag(other.imag){  // переміщуємо значення
     // Обнуляємо джерело
     other.real = 0;
     other.imag = 0;
