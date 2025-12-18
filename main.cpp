@@ -20,7 +20,5 @@ int main() {
     complex<double> d = y / x;  // 2.2 - 0.4i
     d.display();
 
-    complex<double> e;
-
     return 0;
 }
